@@ -2,6 +2,7 @@ plot_respiration = function(respiration_processed){
   
 inc.lab<-c("2 °C","4 °C","6 °C","8 °C","10 °C")
 names(inc.lab) <- c("2","4","6","8","10")
+
   gg_res =
     respiration_processed %>%
     mutate(Inc_temp = factor(Inc_temp, levels=c("2","4","6","8","10")),

@@ -29,9 +29,6 @@ cbPalette2 <- c("#FF1493","#00FFFF", "#117733", "#332288", "#AA4499",
 
 Scale_inc= scale_color_manual(values=cbPalette2,limits=c("Pre","2","4","6","8","10"))
 
-
-
-
 theme_CKM <- function() {  # this for all the elements common across plots
   theme_bw() %+replace%
     theme(legend.text = element_text(size = 12),
@@ -152,7 +149,6 @@ ggplotRegression <- function (fit) {
 compare.coeff <- function(b1,se1,b2,se2){
   return((b1-b2)/sqrt(se1^2+se2^2))
 }
-
 
 fit_lm = function(LASTRES){
   
