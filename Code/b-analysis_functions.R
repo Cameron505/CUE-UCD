@@ -13,7 +13,7 @@ gg_infiltration<- sample_data_1 %>%
                alpha = 0.2)+
   geom_point()+
   ylim(NA,280)+
-  ylab("Infiltration")+
+  ylab("Infiltration (s)")+
   xlab("Field ID")+
   scale_x_discrete(labels = c("8-6" = "Native",
                               "8-8" = "Organic",
