@@ -32,8 +32,8 @@ source("Code/b-analysis_functions.R")
 list(
   
   # sample metadata
-  tar_target(sample_key_data, "Data/Sample_key_AntecedentTemp.csv", format = "file"),
-  tar_target(sample_key, read.csv(sample_key_data)),
+  tar_target(sample_key_data, "Data/Data_sheet_1.csv", format = "file"),
+  tar_target(sample_data_1, read.csv(sample_key_data))
   
   
   # data files
@@ -43,8 +43,8 @@ list(
   
   
   # analysis - graphs
-  tar_target(gg_respiration, plot_respiration(respiration_processed)),
+  
   
   #reports
-  tar_render(report, path = "reports/AntecedentTemp_report.Rmd")
+ 
 )

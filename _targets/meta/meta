@@ -1,0 +1,17 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+fit_lm|function|ee0510e978919dfd
+cbPalette|object|2fcd813deffc22a6
+Scale_inc|object|cf5ab0138b17f24b
+theme_CKM2|function|cf2bae43080e9bd6
+cbPalette2|object|3b62759d16d616ab
+theme_CKM3|function|4a4b68b10fa81f6c
+theme_CKM|function|9487904b89fa0841
+theme_CKM4|function|a27ddeab0f0b942e
+theme_CKM5|function|0976f3e88a5488b0
+compare.coeff|function|1d43785fb29b16b7
+import_respiration|function|e27b6597b6a1f11b
+process_respiration|function|3b8ffe8e0fc54cc0
+ggplotRegression|function|a25b1be30f4921ce
+plot_respiration|function|30c3f71edf4624af
+sample_key_data|stem|36a3af8e5f7fc967|810f955100b6c826|ef46db3751d8e999|992213652|Data/Data_sheet_1.csv|t19823.936183733s|9087690b4099d195|1098|file|local|vector|||0||
+sample_data_1|stem|e3c260c1595f79c7|5076e0a710a22685|eedbe3cd7167c3e5|-1479667387||t19823.9371503518s|bcf5ca172fe46bf7|658|rds|local|vector|||0||

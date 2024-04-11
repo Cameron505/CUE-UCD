@@ -1,11 +1,9 @@
 
-import_respiration= function(FILEPATH){
+Processes_Data_1= function(FILEPATH){
   # import data file
-  filePaths_respiration <- list.files(FILEPATH, pattern = "csv", full.names = TRUE, recursive = TRUE)
-  respiration_data <- read.csv(FILEPATH, header = TRUE) %>% mutate(Date = lubridate::mdy(Date), pre.inc = as.factor(pre.inc) ,
-    Inc.temp = as.factor(Inc.temp)) %>% janitor::clean_names()
-  respiration_data = respiration_data %>% mutate(source = basename(FILEPATH))
-  respiration_data
+ sample_data_1
+  
+  
   list(respiration_data = respiration_data)
 }
 
