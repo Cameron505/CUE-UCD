@@ -31,20 +31,13 @@ source("Code/b-analysis_functions.R")
 # Replace the target list below with your own:
 list(
   
-  # sample metadata
-  tar_target(sample_key_data, "Data/Data_sheet_1.csv", format = "file"),
-  tar_target(sample_data_1, read.csv(sample_key_data))
-  
-  
   # data files
-  #tar_target()
-
-
-  
+  tar_target(sample_key_data, "Data/Data_sheet_1.csv", format = "file"),
+  tar_target(sample_data_1, read.csv(sample_key_data)),
   
   # analysis - graphs
-  
+  tar_target(Soil_infiltration, plot_infiltration(sample_data_1)),
   
   #reports
- 
+  tar_render(report, path = "reports/CUE_Davis_Soil_report.Rmd")
 )

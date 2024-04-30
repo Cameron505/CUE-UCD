@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+padding-top: 0px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="cue_davis_soil_report">CUE_Davis_Soil_report</h1>
+<h2 id="soil-infiltration">Soil infiltration</h2>
+<details>
+<summary>
+click to open
+</summary>
+
+<img src="data:image/png;base64,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" width="100%" />
+
+</details>
+
+<h2 id="session-info">Session Info</h2>
+<details>
+<summary>
+Session Info
+</summary>
+
+<p>Date run: 2024-04-24</p>
+<pre><code>## R version 4.3.2 (2023-10-31 ucrt)
+## Platform: x86_64-w64-mingw32/x64 (64-bit)
+## Running under: Windows 11 x64 (build 22631)
+## 
+## Matrix products: default
+## 
+## 
+## locale:
+## [1] LC_COLLATE=English_United States.utf8 
+## [2] LC_CTYPE=English_United States.utf8   
+## [3] LC_MONETARY=English_United States.utf8
+## [4] LC_NUMERIC=C                          
+## [5] LC_TIME=English_United States.utf8    
+## 
+## time zone: America/Los_Angeles
+## tzcode source: internal
+## 
+## attached base packages:
+## [1] grid      stats     graphics  grDevices utils     datasets  methods  
+## [8] base     
+## 
+## other attached packages:
+##  [1] ropls_1.34.0        trelliscopejs_0.2.6 pmartR_2.4.1       
+##  [4] agricolae_1.3-7     knitr_1.45          nlme_3.1-163       
+##  [7] cowplot_1.1.1       ggpubr_0.6.0        janitor_2.2.0      
+## [10] pracma_2.4.4        reshape2_1.4.4      ggbiplot_0.55      
+## [13] scales_1.3.0        plyr_1.8.9          vegan_2.6-4        
+## [16] lattice_0.21-9      permute_0.9-7       lubridate_1.9.3    
+## [19] forcats_1.0.0       stringr_1.5.1       dplyr_1.1.4        
+## [22] purrr_1.0.2         readr_2.1.4         tidyr_1.3.0        
+## [25] tibble_3.2.1        ggplot2_3.4.4       tidyverse_2.0.0    
+## [28] tarchetypes_0.7.9   targets_1.3.2      
+## 
+## loaded via a namespace (and not attached):
+##  [1] bitops_1.0-7                MultiDataSet_1.30.0        
+##  [3] rlang_1.1.2                 magrittr_2.0.3             
+##  [5] snakecase_0.11.1            matrixStats_1.2.0          
+##  [7] compiler_4.3.2              mgcv_1.9-0                 
+##  [9] callr_3.7.3                 vctrs_0.6.4                
+## [11] pkgconfig_2.0.3             crayon_1.5.2               
+## [13] fastmap_1.1.1               XVector_0.42.0             
+## [15] backports_1.4.1             labeling_0.4.3             
+## [17] utf8_1.2.4                  rmarkdown_2.25             
+## [19] tzdb_0.4.0                  ps_1.7.5                   
+## [21] MultiAssayExperiment_1.28.0 xfun_0.41                  
+## [23] zlibbioc_1.48.0             GenomeInfoDb_1.38.5        
+## [25] jsonlite_1.8.8              progress_1.2.2             
+## [27] highr_0.10                  DelayedArray_0.28.0        
+## [29] broom_1.0.5                 parallel_4.3.2             
+## [31] prettyunits_1.2.0           cluster_2.1.4              
+## [33] R6_2.5.1                    DistributionUtils_0.6-1    
+## [35] stringi_1.8.2               limma_3.58.1               
+## [37] car_3.1-2                   GenomicRanges_1.54.1       
+## [39] Rcpp_1.0.11                 SummarizedExperiment_1.32.0
+## [41] iterators_1.0.14            base64enc_0.1-3            
+## [43] IRanges_2.36.0              Matrix_1.6-1.1             
+## [45] splines_4.3.2               igraph_1.5.1               
+## [47] timechange_0.2.0            tidyselect_1.2.0           
+## [49] rstudioapi_0.15.0           abind_1.4-5                
+## [51] yaml_2.3.7                  AlgDesign_1.2.1            
+## [53] codetools_0.2-19            processx_3.8.2             
+## [55] Biobase_2.62.0              withr_2.5.2                
+## [57] evaluate_0.23               mclust_6.0.1               
+## [59] pillar_1.9.0                MatrixGenerics_1.14.0      
+## [61] carData_3.0-5               checkmate_2.3.0            
+## [63] foreach_1.5.2               stats4_4.3.2               
+## [65] generics_0.1.3              RCurl_1.98-1.14            
+## [67] hms_1.1.3                   S4Vectors_0.40.2           
+## [69] munsell_0.5.0               calibrate_1.7.7            
+## [71] base64url_1.4               glue_1.6.2                 
+## [73] tools_4.3.2                 data.table_1.14.8          
+## [75] webshot_0.5.5               ggsignif_0.6.4             
+## [77] fs_1.6.3                    colorspace_2.1-0           
+## [79] GenomeInfoDbData_1.2.11     cli_3.6.1                  
+## [81] fansi_1.0.5                 S4Arrays_1.2.0             
+## [83] gtable_0.3.4                autocogs_0.1.4             
+## [85] rstatix_0.7.2               digest_0.6.33              
+## [87] BiocGenerics_0.48.1         SparseArray_1.2.3          
+## [89] farver_2.1.1                htmltools_0.5.7            
+## [91] lifecycle_1.0.4             statmod_1.5.0              
+## [93] qqman_0.1.9                 MASS_7.3-60</code></pre>
+</details>
+
+</body>
+</html>
