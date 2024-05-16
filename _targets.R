@@ -34,10 +34,15 @@ list(
   # data files
   tar_target(sample_key_data, "Data/Data_sheet_1.csv", format = "file"),
   tar_target(sample_data_1, read.csv(sample_key_data)),
+  tar_target(sample_key_data2, "Data/WHC at collection.csv", format = "file"),
+  tar_target(sample_data_2, read.csv(sample_key_data2)),
+  tar_target(sample_key_data3, "Data/Water holding capacity.csv", format = "file"),
+  tar_target(sample_data_3, read.csv(sample_key_data3)),
   
   # analysis - graphs
   tar_target(Soil_infiltration, plot_infiltration(sample_data_1)),
-  
+  tar_target(Soil_Bulk, plot_WHC(sample_data_2)),
+  tar_target(Soil_Bulk2, plot_WHC2(sample_data_3)),
   #reports
   tar_render(report, path = "reports/CUE_Davis_Soil_report.Rmd")
 )

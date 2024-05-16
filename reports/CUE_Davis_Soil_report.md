@@ -1,14 +1,23 @@
 CUE_Davis_Soil_report
 ================
 
-## Soil infiltration
+## Soil physical properties by site
 
 <details>
 <summary>
 click to open
 </summary>
 
-<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-1-1.png" width="100%" />
+<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-1-1.png" width="100%" /><img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-1-2.png" width="100%" />
+
+    ## $gg_bulk
+
+![](CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+\## WHC in organic and conventional soils. And by aggregate size.
+
+    ## $gg_bulk
+
+![](CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 </details>
 
@@ -19,7 +28,7 @@ click to open
 Session Info
 </summary>
 
-Date run: 2024-04-24
+Date run: 2024-05-09
 
     ## R version 4.3.2 (2023-10-31 ucrt)
     ## Platform: x86_64-w64-mingw32/x64 (64-bit)
