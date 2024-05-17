@@ -5,23 +5,24 @@ compare.coeff|function|1d43785fb29b16b7|||||||||||||||
 fit_lm|function|ee0510e978919dfd|||||||||||||||
 ggplotRegression|function|a25b1be30f4921ce|||||||||||||||
 import_respiration|function|e27b6597b6a1f11b|||||||||||||||
+plot_aggregate|function|c3e62048018de70a|||||||||||||||
 plot_infiltration|function|e0c73543d7acc15e|||||||||||||||
 plot_respiration|function|30c3f71edf4624af|||||||||||||||
 plot_WHC|function|c41ede23c11dd206|||||||||||||||
 plot_WHC2|function|60005d08c66766f9|||||||||||||||
 process_respiration|function|3b8ffe8e0fc54cc0|||||||||||||||
 Processes_Data_1|function|a1dd833394166fe4|||||||||||||||
-report|stem|2a646a34782f50ff|6c53dd45e778034a|81e0535ac71a11b3|-237041703|reports/CUE_Davis_Soil_report.md*reports/CUE_Davis_Soil_report.Rmd*reports/CUE_Davis_Soil_report_files|t19853.009096974s|19e8e2e6f45e1e3c|31608|file|local|vector|||2.63||
-sample_data_1|stem|bbd7173399a6c732|5076e0a710a22685|ba3d84aec7bbcfc0|-1479667387||t19852.9985315746s|a9ba09a25c2eb94f|1022|rds|local|vector|||0||
+report|stem|2fb0cd4ca0a8b532|6c53dd45e778034a|bf16d059bf19faea|-237041703|reports/CUE_Davis_Soil_report.md*reports/CUE_Davis_Soil_report.Rmd*reports/CUE_Davis_Soil_report_files|t19860.7194634912s|944db663ae5ca4e1|6266|file|local|vector|||3.94||
+sample_data_1|stem|a0be9e710e8c8baa|5076e0a710a22685|1a5feb6692e53838|-1479667387||t19860.7194168792s|f71d611ca841bc70|1922|rds|local|vector|||0.02||
 sample_data_2|stem|1b29e15640868085|091c3989262c1d87|5ba1a2641da59b67|-1652818783||t19850.9956037871s|71e695e858e0833c|250|rds|local|vector|||0||
-sample_data_3|stem|0c357b4d1a2ef4fc|91508970aea0a366|9c00cc59f2d9797f|-1018705864||t19853.0090663722s|8d1a0db6947687bd|546|rds|local|vector|||0||
-sample_key_data|stem|0a8170d28067854b|810f955100b6c826|ef46db3751d8e999|992213652|Data/Data_sheet_1.csv|t19851.8936947506s|93167b861ea4b3cc|1396|file|local|vector|||0||
+sample_data_3|stem|f5210440d797744b|91508970aea0a366|6c705060f16140a2|-1018705864||t19860.7194174111s|73e54f099eba1f9d|899|rds|local|vector|||0||
+sample_key_data|stem|dcd84b680af6d1d4|810f955100b6c826|ef46db3751d8e999|992213652|Data/Data_sheet_1.csv|t19857.7381708472s|db19104e1571d7d1|2516|file|local|vector|||0||
 sample_key_data2|stem|652ace7e29f1ebf4|03d112a575b7d15e|ef46db3751d8e999|1230782866|Data/WHC at collection.csv|t19851.002047491s|59c08d4d9e7e0b0e|334|file|local|vector|||0||
-sample_key_data3|stem|097b99f6b9cc162d|ed389a21a090c1a2|ef46db3751d8e999|1561487614|Data/Water holding capacity.csv|t19853.0070651365s|10a1ebd0400b7b35|700|file|local|vector|||0||
+sample_key_data3|stem|128ff57ca9ba3001|ed389a21a090c1a2|ef46db3751d8e999|1561487614|Data/Water holding capacity.csv|t19857.746748795s|d6207e6fae1d9ee6|1150|file|local|vector|||0||
 Scale_inc|object|cf5ab0138b17f24b|||||||||||||||
 Soil_Bulk|stem|7af89ffb2ce6862d|537015a7ebb098e0|68fc245bf0c623a7|466947919||t19851.0178190541s|be8e4a3e40efff1d|145385|rds|local|vector|||0.23|1m22mThe size argument of element_rect is deprecated as of ggplot2 3.4.0.36mℹ39m Please use the linewidth argument instead.|
-Soil_Bulk2|stem|322dc339c33db419|df0a63ea07a08277|137458894224b97e|270673544||t19853.0090680005s|06b1bb43267ae419|97160|rds|local|vector|||0.08|1m22mThe size argument of element_rect is deprecated as of ggplot2 3.4.0.36mℹ39m Please use the linewidth argument instead.|
-Soil_infiltration|stem|e1f0328c5f340c36|d59c46d907fa069a|52cdf895a0ec32bb|-633788018||t19852.9985352526s|b89839c390fc70e4|202859|rds|local|vector|||0.2|1m22mThe size argument of element_rect is deprecated as of ggplot2 3.4.0.36mℹ39m Please use the linewidth argument instead.|
+Soil_Bulk2|stem|4589272198ecea5f|df0a63ea07a08277|55a35e56ddd7083b|270673544||t19860.7194233587s|30fa81f831008059|98715|rds|local|vector|||0.01||
+Soil_infiltration|stem|4568dae71a6e9f6b|d59c46d907fa069a|d3223bb2989bc94f|-633788018||t19860.7194223968s|9fbcb7815332a108|208021|rds|local|vector|||0.32|1m22mThe size argument of element_rect is deprecated as of ggplot2 3.4.0.36mℹ39m Please use the linewidth argument instead.|
 theme_CKM|function|9487904b89fa0841|||||||||||||||
 theme_CKM2|function|00273414b636b466|||||||||||||||
 theme_CKM3|function|4a4b68b10fa81f6c|||||||||||||||
