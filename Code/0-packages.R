@@ -28,7 +28,7 @@ cbPalette <- c("#888888","#FF1493","#00FFFF" , "#117733", "#332288", "#AA4499",
                         "#44AA99", "#882255", "#661100", "#6699CC","#DDCC77")
 cbPalette2 <- c("#FF1493","#00FFFF", "#117733", "#332288", "#AA4499", 
                          "#44AA99", "#882255", "#661100", "#6699CC", "#DDCC77", "#888888")
-
+cbPalette6 <- c("#F08080", "#6495ED", "#8FBC8F", "#FF8C00", "#9370DB", "#66CDAA", "#CD5C5C", "#7B68EE", "#6B8E23", "#708090")
 Scale_inc= scale_color_manual(values=cbPalette2,limits=c("Pre","2","4","6","8","10"))
 
 theme_CKM <- function() {  # this for all the elements common across plots
@@ -53,10 +53,17 @@ theme_CKM <- function() {  # this for all the elements common across plots
 }
 theme_CKM2 <- function() {  # this for all the elements common across plots
   theme_bw() %+replace%
-    theme(panel.border = element_rect(color="black",size=2, fill = NA),
-          panel.grid.major = element_blank(),
-          panel.grid.minor = element_blank()
-          
+    theme(
+      #legend.position = "none",
+      panel.background = element_blank(),
+      axis.text = element_text(size = 14, color = "black"),
+      strip.background = element_rect(colour=NA, fill=NA), #facet formatting
+      strip.text.x = element_text(size=12, face="bold"), #facet labels
+      strip.text.y = element_text(size=12, face="bold", angle = 270), #facet labels
+      axis.title.x = element_blank(),
+      axis.title.y = element_blank(),
+      panel.grid.major = element_blank(), 
+      panel.grid.minor = element_blank()
     )
 }
 

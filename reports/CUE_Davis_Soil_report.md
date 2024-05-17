@@ -8,16 +8,21 @@ CUE_Davis_Soil_report
 click to open
 </summary>
 
-<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-1-1.png" width="100%" /><img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-1-2.png" width="100%" />
+### Water infiltration measured in the field n=6
 
-    ## $gg_bulk
+<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-1-1.png" width="100%" />
 
-![](CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
-\## WHC in organic and conventional soils. And by aggregate size.
+### Bulk density of soil n=6
 
-    ## $gg_bulk
+<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-2-1.png" width="100%" />
 
-![](CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+### Proportion of each aggregate size by mass n=9
+
+<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-3-1.png" width="100%" />
+
+### WHC in organic and conventional soils. And by aggregate size. n=4
+
+<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-4-1.png" width="100%" />
 
 </details>
 
@@ -56,11 +61,11 @@ Date run: 2024-05-17
     ##  [4] agricolae_1.3-7     knitr_1.45          nlme_3.1-163       
     ##  [7] cowplot_1.1.1       ggpubr_0.6.0        janitor_2.2.0      
     ## [10] pracma_2.4.4        reshape2_1.4.4      ggbiplot_0.55      
-    ## [13] scales_1.3.0        plyr_1.8.9          vegan_2.6-4        
-    ## [16] lattice_0.21-9      permute_0.9-7       lubridate_1.9.3    
-    ## [19] forcats_1.0.0       stringr_1.5.1       dplyr_1.1.4        
-    ## [22] purrr_1.0.2         readr_2.1.4         tidyr_1.3.0        
-    ## [25] tibble_3.2.1        ggplot2_3.4.4       tidyverse_2.0.0    
+    ## [13] scales_1.3.0        vegan_2.6-4         lattice_0.21-9     
+    ## [16] permute_0.9-7       lubridate_1.9.3     forcats_1.0.0      
+    ## [19] stringr_1.5.1       purrr_1.0.2         readr_2.1.4        
+    ## [22] tidyr_1.3.0         tibble_3.2.1        ggplot2_3.4.4      
+    ## [25] tidyverse_2.0.0     dplyr_1.1.4         plyr_1.8.9         
     ## [28] tarchetypes_0.7.9   targets_1.3.2      
     ## 
     ## loaded via a namespace (and not attached):

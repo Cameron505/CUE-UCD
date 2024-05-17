@@ -18,22 +18,31 @@ knitr::opts_chunk$set(echo = FALSE,
 <details>
   <summary>click to open</summary>
 
+### Water infiltration measured in the field n=6
 
 ```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
 tar_read(Soil_infiltration)$gg_infiltration
 
+```
 
-
+### Bulk density of soil n=6
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
 tar_read(Soil_infiltration)$gg_Bulk
 
 ```
 
-```{r}
-tar_read(Soil_Bulk)
+### Proportion of each aggregate size by mass n=9
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(Soil_Aggregate_proportion)
+
 ```
-## WHC in organic and conventional soils. And by aggregate size. 
-```{r}
+
+### WHC in organic and conventional soils. And by aggregate size. n=4
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
 tar_read(Soil_Bulk2)
+
 ```
 
 </details>

@@ -1,30 +1,32 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 cbPalette|object|2fcd813deffc22a6|||||||||||||||
 cbPalette2|object|3b62759d16d616ab|||||||||||||||
+cbPalette6|object|5b471423e39225e2|||||||||||||||
 compare.coeff|function|1d43785fb29b16b7|||||||||||||||
 fit_lm|function|ee0510e978919dfd|||||||||||||||
 ggplotRegression|function|a25b1be30f4921ce|||||||||||||||
 import_respiration|function|e27b6597b6a1f11b|||||||||||||||
-plot_aggregate|function|c3e62048018de70a|||||||||||||||
-plot_infiltration|function|e0c73543d7acc15e|||||||||||||||
+plot_aggregate|function|f3a93243a3528d55|||||||||||||||
+plot_infiltration|function|439e316fe2e65b87|||||||||||||||
 plot_respiration|function|30c3f71edf4624af|||||||||||||||
-plot_WHC|function|c41ede23c11dd206|||||||||||||||
-plot_WHC2|function|60005d08c66766f9|||||||||||||||
+plot_WHC|function|da4ee7bf0a74e62e|||||||||||||||
+plot_WHC2|function|840467c8550f5ac8|||||||||||||||
 process_respiration|function|3b8ffe8e0fc54cc0|||||||||||||||
 Processes_Data_1|function|a1dd833394166fe4|||||||||||||||
-report|stem|2fb0cd4ca0a8b532|6c53dd45e778034a|bf16d059bf19faea|-237041703|reports/CUE_Davis_Soil_report.md*reports/CUE_Davis_Soil_report.Rmd*reports/CUE_Davis_Soil_report_files|t19860.7194634912s|944db663ae5ca4e1|6266|file|local|vector|||3.94||
-sample_data_1|stem|a0be9e710e8c8baa|5076e0a710a22685|1a5feb6692e53838|-1479667387||t19860.7194168792s|f71d611ca841bc70|1922|rds|local|vector|||0.02||
+report|stem|f217400e1fdd9162|072ca594a8f96bb8|adce4c66778b1e57|-237041703|reports/CUE_Davis_Soil_report.md*reports/CUE_Davis_Soil_report.Rmd*reports/CUE_Davis_Soil_report_files|t19860.81916719s|c480cf645cd548c8|48240|file|local|vector|||2.69||
+sample_data_1|stem|89203cf6b28dbb56|5076e0a710a22685|6cbe41f81cb66039|-1479667387||t19860.7494188411s|fd37912b6612ce1d|1376|rds|local|vector|||0.02||
 sample_data_2|stem|1b29e15640868085|091c3989262c1d87|5ba1a2641da59b67|-1652818783||t19850.9956037871s|71e695e858e0833c|250|rds|local|vector|||0||
 sample_data_3|stem|f5210440d797744b|91508970aea0a366|6c705060f16140a2|-1018705864||t19860.7194174111s|73e54f099eba1f9d|899|rds|local|vector|||0||
-sample_key_data|stem|dcd84b680af6d1d4|810f955100b6c826|ef46db3751d8e999|992213652|Data/Data_sheet_1.csv|t19857.7381708472s|db19104e1571d7d1|2516|file|local|vector|||0||
+sample_key_data|stem|9f10d439e68c02d2|810f955100b6c826|ef46db3751d8e999|992213652|Data/Data_sheet_1.csv|t19860.8084104306s|af8eabddbd0d2a57|1759|file|local|vector|||0||
 sample_key_data2|stem|652ace7e29f1ebf4|03d112a575b7d15e|ef46db3751d8e999|1230782866|Data/WHC at collection.csv|t19851.002047491s|59c08d4d9e7e0b0e|334|file|local|vector|||0||
 sample_key_data3|stem|128ff57ca9ba3001|ed389a21a090c1a2|ef46db3751d8e999|1561487614|Data/Water holding capacity.csv|t19857.746748795s|d6207e6fae1d9ee6|1150|file|local|vector|||0||
 Scale_inc|object|cf5ab0138b17f24b|||||||||||||||
-Soil_Bulk|stem|7af89ffb2ce6862d|537015a7ebb098e0|68fc245bf0c623a7|466947919||t19851.0178190541s|be8e4a3e40efff1d|145385|rds|local|vector|||0.23|1m22mThe size argument of element_rect is deprecated as of ggplot2 3.4.0.36mℹ39m Please use the linewidth argument instead.|
-Soil_Bulk2|stem|4589272198ecea5f|df0a63ea07a08277|55a35e56ddd7083b|270673544||t19860.7194233587s|30fa81f831008059|98715|rds|local|vector|||0.01||
-Soil_infiltration|stem|4568dae71a6e9f6b|d59c46d907fa069a|d3223bb2989bc94f|-633788018||t19860.7194223968s|9fbcb7815332a108|208021|rds|local|vector|||0.32|1m22mThe size argument of element_rect is deprecated as of ggplot2 3.4.0.36mℹ39m Please use the linewidth argument instead.|
+Soil_Aggregate_proportion|stem|38c01ca9779f988c|29e95bdd48bf2d49|ed61246229523afe|299997261||t19860.8191326184s|856402e03ee8e09a|88848|rds|local|vector|||0.12||
+Soil_Bulk|stem|7a5e0dd546742fa6|537015a7ebb098e0|cdccdc4c80983e64|466947919||t19860.8191362137s|6ee5432b10b26376|145410|rds|local|vector|||0.02||
+Soil_Bulk2|stem|6d513bc4802c0d5a|df0a63ea07a08277|f6c48be2bdd370fd|270673544||t19860.8191374698s|cbb5043ecd10b901|98751|rds|local|vector|||0.01||
+Soil_infiltration|stem|b188f265e5f26c9f|d59c46d907fa069a|75fa2dd87cbb6205|-633788018||t19860.819135073s|3b543a691b9793e4|204986|rds|local|vector|||0.11||
 theme_CKM|function|9487904b89fa0841|||||||||||||||
-theme_CKM2|function|00273414b636b466|||||||||||||||
+theme_CKM2|function|e1ae6b358a1c4176|||||||||||||||
 theme_CKM3|function|4a4b68b10fa81f6c|||||||||||||||
 theme_CKM4|function|a27ddeab0f0b942e|||||||||||||||
 theme_CKM5|function|0976f3e88a5488b0|||||||||||||||
