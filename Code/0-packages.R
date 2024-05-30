@@ -60,8 +60,6 @@ theme_CKM2 <- function() {  # this for all the elements common across plots
       strip.background = element_rect(colour=NA, fill=NA), #facet formatting
       strip.text.x = element_text(size=12, face="bold"), #facet labels
       strip.text.y = element_text(size=12, face="bold", angle = 270), #facet labels
-      axis.title.x = element_blank(),
-      axis.title.y = element_blank(),
       panel.grid.major = element_blank(), 
       panel.grid.minor = element_blank()
     )

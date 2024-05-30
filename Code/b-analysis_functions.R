@@ -113,7 +113,7 @@ plot_WHC = function(sample_data_2){
 plot_WHC2 = function(sample_data_3){
   
   gg_bulk<- sample_data_3 %>%
-    ggplot(aes(x= as.factor(Site),y=g.wet.per.g.dry..100..water.holding.capacity., color=Aggregatefraction ))+
+    ggplot(aes(x= as.factor(Site),y=g.dry.per.g.wet..100..water.holding.capacity., color=Aggregatefraction ))+
     geom_boxplot(show.legend = F, 
                  outlier.colour = NULL,
                  outlier.fill = NULL,
@@ -121,7 +121,7 @@ plot_WHC2 = function(sample_data_3){
                  alpha = 0.2)+
     geom_point(position=position_dodge(width=0.75))+
     #ylim(NA,110)+
-    ylab("g water per g dry soil at 100% WHC")+
+    ylab("g dry per g wet soil at 100% WHC")+
     xlab("Field ID")+
     scale_x_discrete(labels = c("O" = "Organic",
                                 "C" = "Conventional"))+
