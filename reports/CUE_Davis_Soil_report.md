@@ -1,6 +1,17 @@
 CUE_Davis_Soil_report
 ================
 
+## Soil description
+
+<details>
+<summary>
+click to open
+</summary>
+
+##### Samples were collected from russell ranch in early 2024. Trenched plots were constructed, and weeded to avoid the influence of roots and plant communities on soil properties. Despite being fallowed the conventional plots are still being herbicided, so the amount of plants, and the community composition were different in all fields. Soils were collected and sieved through a 8 mm sieve. Soils were then stored in a -80 freezer until soil fractionation was conducted. Each soil sample is fractionated twice. the first round the soils were sieved then aggregated were dried down to determine physical properties. Dried aggregates were also saved for an archive if dry soils will help later. The second sieve was conducted and soils were not allowed to dry out and only 2 soils were processed at once. Soil moiture was adjusted (Reduced) to ~60% water holding capacity (determined for each aggregate class from the fist sieve). After which some soils were stored in 1.7 mL tubes for -80 storage, 2g soil was used for an 18O H2O incubation to determine carbon use efficency, while 2 5g subsamples were used to determine microbial biomass C and N. After the CUE incubation was complete a gas sample of the headspace was taken to determine respiration rates during the incubation. After the incubation DNA was extracted from the soils to determine 18O incorporation in DNA during 24 hr incubation.
+
+</details>
+
 ## Soil physical properties by site
 
 <details>
@@ -8,22 +19,53 @@ CUE_Davis_Soil_report
 click to open
 </summary>
 
-### Water infiltration measured in the field n=6
+#### Water infiltration measured in the field n=6
+
+<details>
+<summary>
+click to open
+</summary>
+
+##### we see a clear difference between the conventional soils and organic/native plots. Organic and Native grass prairie also were significantly different from eachother with Native grass prairie soils having the fastest infiltration rate
 
 <img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-1-1.png" width="100%" />
+</details>
 
-### Bulk density of soil n=6
+#### Bulk density of field soil n=6
+
+<details>
+<summary>
+click to open
+</summary>
+
+##### Bulk density did significantly varry between conventional and organic/native. However the bulk density of organic and Native were similar. Organic had a much higher average, but the data was less even compared to Native prairie soils.
 
 <img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-2-1.png" width="100%" />
+</details>
 
-### Proportion of each aggregate size by mass n=9
+#### Proportion of each aggregate size by mass n=9
+
+<details>
+<summary>
+click to open
+</summary>
+
+##### In general the organic soils have higher levels of aggregation for almost all sizes except 2-0.25 mm. Distribution of aggregates by mass is more even in organic soils. These proportions do not match previous data: methods or time/space?
 
 <img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-3-1.png" width="100%" />
+</details>
 
-### WHC in organic and conventional soils. And by aggregate size. n=4
+#### g dry per g wet soil after fractionation, and by aggregate size. n=4
+
+<details>
+<summary>
+click to open
+</summary>
+
+##### this data helped constrain the moisture after wet-sieve. Note that a centrifuge technique was implemented to account for this variation. aggregates were mixed with extra water and shaken vigorously, then centrifuged at 10000 rmp for 15 min. After which the pellet was measured and used to determine moisture.
 
 <img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-4-1.png" width="100%" />
-
+</details>
 </details>
 
 ## Session Info
@@ -33,7 +75,7 @@ click to open
 Session Info
 </summary>
 
-Date run: 2024-05-29
+Date run: 2024-05-30
 
     ## R version 4.3.2 (2023-10-31 ucrt)
     ## Platform: x86_64-w64-mingw32/x64 (64-bit)
