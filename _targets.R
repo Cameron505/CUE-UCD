@@ -38,6 +38,8 @@ list(
   tar_target(sample_data_2, read.csv(sample_key_data2)),
   tar_target(sample_key_data3, "Data/Water holding capacity.csv", format = "file"),
   tar_target(sample_data_3, read.csv(sample_key_data3)),
+  tar_target(sample_key_data4, "Data/DNA extraction sample sheet.csv", format = "file"),
+  tar_target(sample_data_4, read.csv(sample_key_data4)),
   
   # analysis - graphs
   tar_target(Soil_infiltration, plot_infiltration(sample_data_1)),

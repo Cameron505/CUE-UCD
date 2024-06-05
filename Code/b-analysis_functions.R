@@ -175,3 +175,28 @@ plot_aggregate = function(sample_data_1){
   )
   
 }
+
+plot_respiration = function(sample_data_4){
+  
+  
+  
+  gg_res<- sample_data_4 %>%
+    ggplot(aes(x= as.factor(Site),y=CO2, fill=Aggregate))+
+    geom_col()+
+    ylab("respiration (CO2 ppm)")+
+    xlab("Field ID")+
+    scale_x_discrete(labels = c(
+                                "O" = "Organic",
+                                "C" = "Conventional"))+
+    labs(fill = "Aggregate size") +
+    facet_wrap(~Addition)+
+    theme_CKM2()
+  
+  
+  
+  
+  
+  list(gg_agrregate_proportion=gg_agrregate_proportion
+  )
+  
+}
