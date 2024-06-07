@@ -70,6 +70,20 @@ tar_read(Soil_Bulk2)
 
 
 
+## Aggregate fractionated experiment
+
+<details>
+  <summary>click to open</summary>
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_Aggregate)
+```
+
+</details>
+
+
+
+
 ## Session Info 
 
 <details>

@@ -4,24 +4,25 @@ cbPalette2|object|3b62759d16d616ab|||||||||||||||
 cbPalette6|object|5b471423e39225e2|||||||||||||||
 compare.coeff|function|1d43785fb29b16b7|||||||||||||||
 fit_lm|function|ee0510e978919dfd|||||||||||||||
+gg_Aggregate|stem|c82963508a702078|11018997a12980e5|d41492ed948a63e1|-26974812||t19880.7718021318s|006db744404be22a|150034|rds|local|vector|||0.08||
 ggplotRegression|function|a25b1be30f4921ce|||||||||||||||
 import_respiration|function|e27b6597b6a1f11b|||||||||||||||
 plot_aggregate|function|f4443b603a936482|||||||||||||||
 plot_infiltration|function|cc1ee466bc69dd7d|||||||||||||||
-plot_respiration|function|30c3f71edf4624af|||||||||||||||
+plot_respiration|function|47043964657a5ec4|||||||||||||||
 plot_WHC|function|c8e8d99647694053|||||||||||||||
 plot_WHC2|function|85a449c63654ca6c|||||||||||||||
 process_respiration|function|3b8ffe8e0fc54cc0|||||||||||||||
 Processes_Data_1|function|a1dd833394166fe4|||||||||||||||
-report|stem|7d1452f5d6c4f59b|072ca594a8f96bb8|62a7d9455b9f5f0e|-237041703|reports/CUE_Davis_Soil_report.md*reports/CUE_Davis_Soil_report.Rmd*reports/CUE_Davis_Soil_report_files|t19873.8783765273s|40c00166d4c0cb7f|12346|file|local|vector|||3.7||
+report|stem|81abd692fb444ab3|0bc6353a057c5a5e|c258d6825c7d1533|-237041703|reports/CUE_Davis_Soil_report.md*reports/CUE_Davis_Soil_report.Rmd*reports/CUE_Davis_Soil_report_files|t19880.7718650857s|80199865b408b004|81558|file|local|vector|||5.72||
 sample_data_1|stem|a1b0b318f9f8b07a|5076e0a710a22685|e916fa7ee909c6f2|-1479667387||t19872.6636847397s|510d87ba761cedc8|1724|rds|local|vector|||0||
 sample_data_2|stem|1b29e15640868085|091c3989262c1d87|5ba1a2641da59b67|-1652818783||t19850.9956037871s|71e695e858e0833c|250|rds|local|vector|||0||
 sample_data_3|stem|d08e4dda45b7b1b9|91508970aea0a366|a91b3b367bf4b06c|-1018705864||t19872.693528645s|26be939c16f5458b|2609|rds|local|vector|||0||
-sample_data_4|stem|9bfce70d791f09cd|4d5d71cc3eea0898|297bca3d94c3eb9a|-1157449810||t19879.7920858569s|a8a4ee27c67c8956|1284|rds|local|vector|||0||
+sample_data_4|stem|c8bdc3e9d9a00739|4d5d71cc3eea0898|0879937da57f6a9a|-1157449810||t19880.7717994776s|e31c44b97c52f96b|1342|rds|local|vector|||0.02||
 sample_key_data|stem|407801692303791a|810f955100b6c826|ef46db3751d8e999|992213652|Data/Data_sheet_1.csv|t19872.6688165923s|d16e8c81b4bea990|2254|file|local|vector|||0||
 sample_key_data2|stem|652ace7e29f1ebf4|03d112a575b7d15e|ef46db3751d8e999|1230782866|Data/WHC at collection.csv|t19851.002047491s|59c08d4d9e7e0b0e|334|file|local|vector|||0||
 sample_key_data3|stem|75856c16b4e6da9e|ed389a21a090c1a2|ef46db3751d8e999|1561487614|Data/Water holding capacity.csv|t19872.6700338833s|8cc3c7ca7dce55b6|3874|file|local|vector|||0||
-sample_key_data4|stem|c4e75aab930d5996|b21c03b9b8c67dd3|ef46db3751d8e999|1861618885|Data/DNA extraction sample sheet.csv|t19879.7902236079s|fa4d9492a978c403|12189|file|local|vector|||0||
+sample_key_data4|stem|7dedb7243e5bff0d|b21c03b9b8c67dd3|ef46db3751d8e999|1861618885|Data/DNA extraction sample sheet.csv|t19880.7561938947s|7166cc9f5ff26be3|12521|file|local|vector|||0||
 Scale_inc|object|cf5ab0138b17f24b|||||||||||||||
 Soil_Aggregate_proportion|stem|bea417155fec99eb|29e95bdd48bf2d49|d18741f35857009b|299997261||t19872.6673435243s|c43902a6e8b7cda6|89280|rds|local|vector|||0.11||
 Soil_Bulk|stem|d15b0f0c9c3b4634|537015a7ebb098e0|3e9ea7a093c6950d|466947919||t19872.667347824s|deef6227c6d05d75|145442|rds|local|vector|||0.03||

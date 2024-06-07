@@ -46,6 +46,8 @@ list(
   tar_target(Soil_Bulk, plot_WHC(sample_data_2)),
   tar_target(Soil_Bulk2, plot_WHC2(sample_data_3)),
   tar_target(Soil_Aggregate_proportion, plot_aggregate(sample_data_1)),
+  tar_target(gg_Aggregate, plot_respiration(sample_data_4)),
+  #tar_target(gg_DNA_Yield, plot_DNA_Yield(sample_data_4)),
   #reports
   tar_render(report, path = "reports/CUE_Davis_Soil_report.Rmd")
 )

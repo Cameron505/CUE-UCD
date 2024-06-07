@@ -68,6 +68,17 @@ click to open
 </details>
 </details>
 
+## Aggregate fractionated experiment
+
+<details>
+<summary>
+click to open
+</summary>
+
+<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-5-1.png" width="100%" /><img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-5-2.png" width="100%" /><img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-5-3.png" width="100%" />
+
+</details>
+
 ## Session Info
 
 <details>
@@ -75,7 +86,7 @@ click to open
 Session Info
 </summary>
 
-Date run: 2024-05-30
+Date run: 2024-06-06
 
     ## R version 4.3.2 (2023-10-31 ucrt)
     ## Platform: x86_64-w64-mingw32/x64 (64-bit)

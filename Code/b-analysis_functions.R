@@ -178,25 +178,89 @@ plot_aggregate = function(sample_data_1){
 
 plot_respiration = function(sample_data_4){
   
-  
-  
-  gg_res<- sample_data_4 %>%
-    ggplot(aes(x= as.factor(Site),y=CO2, fill=Aggregate))+
-    geom_col()+
-    ylab("respiration (CO2 ppm)")+
+  CO2<-sample_data_4 %>%
+  ggplot(aes(x= as.factor(Site),y=CO2, color=Aggregate))+
+    geom_boxplot(show.legend = F, 
+                 outlier.colour = NULL,
+                 outlier.fill = NULL,
+                 #position = position_dodge(width = 0.6), 
+                 alpha = 0.2)+
+    geom_point(position = position_dodge(width=0.8))+
+    #ylim(NA,300)+
+    ylab("respiration (ppm per day)")+
     xlab("Field ID")+
     scale_x_discrete(labels = c(
-                                "O" = "Organic",
-                                "C" = "Conventional"))+
-    labs(fill = "Aggregate size") +
+      "O" = "Organic",
+      "C" = "Conventional"))+
+    facet_wrap(~Addition)+
+    theme_CKM2()
+  
+  N2O<-sample_data_4 %>%
+    ggplot(aes(x= as.factor(Site),y=N2O, color=Aggregate))+
+    geom_boxplot(show.legend = F, 
+                 outlier.colour = NULL,
+                 outlier.fill = NULL,
+                 #position = position_dodge(width = 0.6), 
+                 alpha = 0.2)+
+    geom_point(position = position_dodge(width=0.8))+
+    #ylim(NA,300)+
+    ylab("respiration (ppm per day)")+
+    xlab("Field ID")+
+    scale_x_discrete(labels = c(
+      "O" = "Organic",
+      "C" = "Conventional"))+
     facet_wrap(~Addition)+
     theme_CKM2()
   
   
   
+  CH4<-sample_data_4 %>%
+    ggplot(aes(x= as.factor(Site),y=CH4, color=Aggregate))+
+    geom_boxplot(show.legend = F, 
+                 outlier.colour = NULL,
+                 outlier.fill = NULL,
+                 #position = position_dodge(width = 0.6), 
+                 alpha = 0.2)+
+    geom_point(position = position_dodge(width=0.8))+
+    #ylim(NA,300)+
+    ylab("respiration (ppm per day)")+
+    xlab("Field ID")+
+    scale_x_discrete(labels = c(
+      "O" = "Organic",
+      "C" = "Conventional"))+
+    facet_wrap(~Addition)+
+    theme_CKM2()
   
   
-  list(gg_agrregate_proportion=gg_agrregate_proportion
+  list(CO2=CO2,
+       N2O=N2O,
+       CH4=CH4
+  )
+  
+}
+
+plot_DNA_Yield = function(sample_data_4){
+  
+ 
+  DNA_Yield<-sample_data_4 %>%
+    ggplot(aes(x= as.factor(Site),y=DNA.concentration, color=Aggregate))+
+    geom_boxplot(show.legend = F, 
+                 outlier.colour = NULL,
+                 outlier.fill = NULL,
+                 #position = position_dodge(width = 0.6), 
+                 alpha = 0.2)+
+    geom_point(position = position_dodge(width=0.8))+
+    #ylim(NA,300)+
+    ylab("respiration (ppm per day)")+
+    xlab("Field ID")+
+    scale_x_discrete(labels = c(
+      "O" = "Organic",
+      "C" = "Conventional"))+
+    facet_wrap(~Addition)+
+    theme_CKM2()
+  
+  
+  list( DNA_Yield=DNA_Yield
   )
   
 }
