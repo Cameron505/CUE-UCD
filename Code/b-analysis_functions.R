@@ -65,8 +65,9 @@ gg_Bulk<- sample_data_1 %>%
 
 
 
-
-
+means<-sample_data_1%>%
+  group_by(Plot)%>%
+  summarise(mean1=mean(bulk_density_g.cm3, na.rm = TRUE), mean2=mean(Infiltration, na.rm = TRUE))
 
 
 
@@ -169,9 +170,36 @@ plot_aggregate = function(sample_data_1){
   
   
   
+  gg_Mean_Weight_diameter<- sample_data_1 %>%
+    ggplot(aes(x= as.factor(Plot),y=Mean.weight.Diameter..um.))+
+    geom_boxplot(show.legend = F, 
+                 outlier.colour = NULL,
+                 outlier.fill = NULL,
+                 #position = position_dodge(width = 0.6), 
+                 alpha = 0.2)+
+    ylab("Mean weight diameter (um)")+
+    xlab("Field ID")+
+    scale_x_discrete(labels = c("N8-6" = "Native",
+                                "O8-8" = "Organic",
+                                "C7-8" = "Conventional"))+
+    theme_CKM2()+
+    stat_compare_means(comparisons = list(c("O8-8", "C7-8")),
+                       label = "p.format",  # This argument is for specifying the label format
+                       method = "t.test",   # This argument is for specifying the test
+                       size = 3,            # Adjust text size as needed
+                       geom = "text",       # This argument specifies to display p-values as text
+                       position = position_identity() # This argument is for positioning the labels
+    ) 
+  
+  ggplot_build(gg_Mean_Weight_diameter)$data[[1]]
+  
+  means<-sample_data_1%>%
+    group_by(Plot)%>%
+    summarise(mean=mean(Mean.weight.Diameter..um.))
   
   
-  list(gg_agrregate_proportion=gg_agrregate_proportion
+  list(gg_agrregate_proportion=gg_agrregate_proportion,
+       gg_Mean_Weight_diameter=gg_Mean_Weight_diameter
   )
   
 }
@@ -204,7 +232,7 @@ plot_respiration = function(sample_data_4){
                  alpha = 0.2)+
     geom_point(position = position_dodge(width=0.8))+
     #ylim(NA,300)+
-    ylab("respiration (ppm per day)")+
+    ylab("N2O (ppm per day)")+
     xlab("Field ID")+
     scale_x_discrete(labels = c(
       "O" = "Organic",
@@ -223,7 +251,7 @@ plot_respiration = function(sample_data_4){
                  alpha = 0.2)+
     geom_point(position = position_dodge(width=0.8))+
     #ylim(NA,300)+
-    ylab("respiration (ppm per day)")+
+    ylab("CH4 (ppm per day)")+
     xlab("Field ID")+
     scale_x_discrete(labels = c(
       "O" = "Organic",

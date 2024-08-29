@@ -52,7 +52,7 @@ click to open
 
 ##### In general the organic soils have higher levels of aggregation for almost all sizes except 2-0.25 mm. Distribution of aggregates by mass is more even in organic soils. These proportions do not match previous data: methods or time/space?
 
-<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-3-1.png" width="100%" />
+<img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-3-1.png" width="100%" /><img src="CUE_Davis_Soil_report_files/figure-gfm/unnamed-chunk-3-2.png" width="100%" />
 </details>
 
 #### g dry per g wet soil after fractionation, and by aggregate size. n=4
@@ -86,7 +86,7 @@ click to open
 Session Info
 </summary>
 
-Date run: 2024-06-06
+Date run: 2024-06-24
 
     ## R version 4.3.2 (2023-10-31 ucrt)
     ## Platform: x86_64-w64-mingw32/x64 (64-bit)
