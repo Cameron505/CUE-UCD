@@ -8,7 +8,11 @@ CUE_Davis_Soil_report
 click to open
 </summary>
 
-##### Samples were collected from russell ranch in early 2024. Trenched plots were constructed, and weeded to avoid the influence of roots and plant communities on soil properties. Despite being fallowed the conventional plots are still being herbicided, so the amount of plants, and the community composition were different in all fields. Soils were collected and sieved through a 8 mm sieve. Soils were then stored in a -80 freezer until soil fractionation was conducted. Each soil sample is fractionated twice. the first round the soils were sieved then aggregated were dried down to determine physical properties. Dried aggregates were also saved for an archive if dry soils will help later. The second sieve was conducted and soils were not allowed to dry out and only 2 soils were processed at once. Soil moiture was adjusted (Reduced) to ~60% water holding capacity (determined for each aggregate class from the fist sieve). After which some soils were stored in 1.7 mL tubes for -80 storage, 2g soil was used for an 18O H2O incubation to determine carbon use efficency, while 2 5g subsamples were used to determine microbial biomass C and N. After the CUE incubation was complete a gas sample of the headspace was taken to determine respiration rates during the incubation. After the incubation DNA was extracted from the soils to determine 18O incorporation in DNA during 24 hr incubation.
+##### Soil samples were collected from Russell Ranch in early 2024. Trenched plots were established and weeded to minimize the impact of roots and plant communities on soil properties. Despite being fallowed, conventional plots were still treated with herbicides, leading to differences in plant abundance and community composition across fields.
+
+##### The soils were sieved through an 8 mm mesh and stored at -80°C until fractionation. Each sample underwent two rounds of fractionation. In the first round, soils were sieved, and the resulting aggregates were dried to assess physical properties. Dried aggregates were archived for potential future use. The second round involved sieving without drying, processing only two samples at a time to maintain soil moisture. Soil moisture was adjusted to approximately 60% of the water holding capacity, determined for each aggregate class from the first sieve.
+
+##### Following this, subsamples were processed as follows: some soils were stored in 1.7 mL tubes at -80°C, 2 g of soil was incubated with ^18O-labeled H₂O to assess carbon use efficiency (CUE), and two 5 g subsamples were used to determine microbial biomass carbon (C) and nitrogen (N). After the CUE incubation, gas samples were taken from the headspace to measure respiration rates. DNA was then extracted from the soils to analyze ^18O incorporation into DNA during the 24-hour incubation.
 
 </details>
 
@@ -86,7 +90,7 @@ click to open
 Session Info
 </summary>
 
-Date run: 2024-06-24
+Date run: 2024-09-03
 
     ## R version 4.3.2 (2023-10-31 ucrt)
     ## Platform: x86_64-w64-mingw32/x64 (64-bit)

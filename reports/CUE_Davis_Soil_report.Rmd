@@ -13,8 +13,10 @@ knitr::opts_chunk$set(echo = FALSE,
 ```
 
 ## Soil description
+
 <details>
   <summary>click to open</summary>
+  
 ##### Soil samples were collected from Russell Ranch in early 2024. Trenched plots were established and weeded to minimize the impact of roots and plant communities on soil properties. Despite being fallowed, conventional plots were still treated with herbicides, leading to differences in plant abundance and community composition across fields.
 
 ##### The soils were sieved through an 8 mm mesh and stored at -80°C until fractionation. Each sample underwent two rounds of fractionation. In the first round, soils were sieved, and the resulting aggregates were dried to assess physical properties. Dried aggregates were archived for potential future use. The second round involved sieving without drying, processing only two samples at a time to maintain soil moisture. Soil moisture was adjusted to approximately 60% of the water holding capacity, determined for each aggregate class from the first sieve.
@@ -22,6 +24,8 @@ knitr::opts_chunk$set(echo = FALSE,
 ##### Following this, subsamples were processed as follows: some soils were stored in 1.7 mL tubes at -80°C, 2 g of soil was incubated with ^18O-labeled H₂O to assess carbon use efficiency (CUE), and two 5 g subsamples were used to determine microbial biomass carbon (C) and nitrogen (N). After the CUE incubation, gas samples were taken from the headspace to measure respiration rates. DNA was then extracted from the soils to analyze ^18O incorporation into DNA during the 24-hour incubation.
 
 </details>
+
+
 
 
 ## Soil physical properties by site
@@ -74,6 +78,7 @@ tar_read(Soil_Bulk2)
 
 
 
+
 ## Aggregate fractionated experiment
 
 <details>
@@ -84,6 +89,7 @@ tar_read(gg_Aggregate)
 ```
 
 </details>
+
 
 
 
