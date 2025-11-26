@@ -1,0 +1,36 @@
+Sample ID,Sample #
+Site,Site soil collected from( C: conventional russel ranch field; O: organic russel ranch field)
+Aggregate,"Aggregate size (Bulk, A, B, C, D; pre wet seived, >2mm, <2mm and >0.25mm, <0.25mm and >0.053 mm, <0.053mm)"
+ID,"combined sample ID, Site, and aggregate identifiers"
+Addition,Type of water added for CUE incubation
+Replicate,Replicate 
+Notes,
+Incubation,Column noting if the incubation has been completed. 
+Extraction number,Number of DNA extractions to obtain enough DNA for 18O isotope measurment and metagenome.
+N2O,ppm/day/g dry aggregate
+CO2,ppm/day/g dry aggregate
+CH4,ppm/day/g dry aggregate
+TOC,ppm/g dry aggregate
+TN,ppm/g dry aggregate
+FUM TOC,ppm/g dry aggregate
+FUM TN,ppm/g dry aggregate
+MBC,ppm/g dry aggregate
+MBN,ppm/g dry aggregate
+BG,nmol/g dry aggregate/ hr
+CBH,nmol/g dry aggregate/ hr
+LAP,nmol/g dry aggregate/ hr
+NAG,nmol/g dry aggregate/ hr
+PHOS,nmol/g dry aggregate/ hr
+FDA,ug / g aggregate / hr
+POXC,ug / g aggregate
+CUE,Unitless
+CUEFilt,Filter out points that had issues with O contamination. 
+NO3,
+NH4,
+OlsenP,
+X_Ca,
+X_Mg,
+X_Na,
+[H,
+CEC,
+LOI,

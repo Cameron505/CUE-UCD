@@ -12,6 +12,11 @@ knitr::opts_chunk$set(echo = FALSE,
                       )
 ```
 
+# Year 1 (2024)
+
+<details>
+  <summary>click to open</summary>
+
 ## Soil description
 
 <details>
@@ -19,43 +24,38 @@ knitr::opts_chunk$set(echo = FALSE,
   
 ##### Soil samples were collected from Russell Ranch in early 2024. Trenched plots were established and weeded to minimize the impact of roots and plant communities on soil properties. Despite being fallowed, conventional plots were still treated with herbicides, leading to differences in plant abundance and community composition across fields.
 
-##### The soils were sieved through an 8 mm mesh and stored at -80°C until fractionation. Each sample underwent two rounds of fractionation. In the first round, soils were sieved, and the resulting aggregates were dried to assess physical properties. Dried aggregates were archived for potential future use. The second round involved sieving without drying, processing only two samples at a time to maintain soil moisture. Soil moisture was adjusted to approximately 60% of the water holding capacity, determined for each aggregate class from the first sieve.
+##### The soils were sieved through an 8 mm mesh and stored at -80°C until aggregate fractionation. Each sample underwent two rounds of fractionation. In the first round, soils were sieved, and the resulting aggregates were dried to assess physical properties. Dried aggregates were archived for potential future use. The second round involved sieving without drying, processing only two samples at a time to maintain soil moisture. Soil moisture was adjusted to approximately 68% water holding capacity, determined for each aggregate class from the first sieve.
 
-##### Following this, subsamples were processed as follows: some soils were stored in 1.7 mL tubes at -80°C, 2 g of soil was incubated with ^18O-labeled H₂O to assess carbon use efficiency (CUE), and two 5 g subsamples were used to determine microbial biomass carbon (C) and nitrogen (N). After the CUE incubation, gas samples were taken from the headspace to measure respiration rates. DNA was then extracted from the soils to analyze ^18O incorporation into DNA during the 24-hour incubation.
+##### Following this, subsamples were processed as follows: some soils were stored in 1.7 mL tubes at -80°C for extra DNA extractions and metabolomics, 2 g of soil was incubated with ^18O-labeled H₂O to assess carbon use efficiency (CUE), and two 5 g subsamples were used to determine microbial biomass carbon (C) and nitrogen (N) via chloroform fumigation. After the CUE incubation, gas samples were taken from the headspace to measure respiration rates. DNA was then extracted from the soils to analyze ^18O incorporation into DNA during the 24-hour incubation. About 1 microgram of DNA was sent for metagenome analysis, and freeze dried soils were sent in for metabolomic analysis. FDA (cuvets) and POXC (microplate) were also measured using colormetric assays. Enzyme activities were measured via MUF and MC fluorometric microplate assays. OM fractions were also seperated into fPOM/oPOM/MAOM and will be sent for 13C analysis.
 
 </details>
 
-
-
-
-## Soil physical properties by site
-
+##### Bulk density and water infiltration of field soil n=6
 <details>
   <summary>click to open</summary>
-
-#### Water infiltration measured in the field n=6
-<details>
-  <summary>click to open</summary>
-##### we see a clear difference between the conventional soils and organic/native plots. Organic and Native grass prairie also were significantly different from eachother with Native grass prairie soils having the fastest infiltration rate
-
-```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
-tar_read(Soil_infiltration)$gg_infiltration
-
-```
-</details>
-
-#### Bulk density of field soil n=6
-<details>
-  <summary>click to open</summary>
+  
 ##### Bulk density did significantly varry between conventional and organic/native. However the bulk density of organic and Native were similar. Organic had a much higher average, but the data was less even compared to Native prairie soils. 
 
 ```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
 tar_read(Soil_infiltration)$gg_Bulk
 
+
+
+tar_read(Soil_infiltration)$gg_infiltration
+
 ```
+
 </details>
 
-#### Proportion of each aggregate size by mass n=9
+
+## Aggregate fractionation experiment
+
+<details>
+
+  <summary>click to open</summary>
+
+
+##### Proportion of each aggregate size by mass n=9
 <details>
   <summary>click to open</summary>
   ##### In general the organic soils have higher levels of aggregation for almost all sizes except 2-0.25 mm. Distribution of aggregates by mass is more even in organic soils. These proportions do not match previous data: methods or time/space?
@@ -64,37 +64,233 @@ tar_read(Soil_Aggregate_proportion)
 
 ```
 </details>
-#### g dry per g wet soil after fractionation, and by aggregate size. n=4
-<details>
-  <summary>click to open</summary>
-  ##### this data helped constrain the moisture after wet-sieve. Note that a centrifuge technique was implemented to account for this variation. aggregates were mixed with extra water and shaken vigorously, then centrifuged at 10000 rmp for 15 min. After which the pellet was measured and used to determine moisture. 
-```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
-tar_read(Soil_Bulk2)
 
-```
-</details>
-</details>
-
-
-
-
-
-## Aggregate fractionated experiment
+##### All plots (No stats) 
 
 <details>
   <summary>click to open</summary>
 
+
 ```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
-tar_read(gg_Aggregate)
+tar_read(soil_plots)
+
+```
+</details>
+
+
+##### Head space measurments (24hr CUE incubation)
+
+<details>
+  <summary>click to open</summary>
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_Res)
+```
+
+</details>
+
+
+##### Soil analysis
+<details>
+  <summary>click to open</summary>
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_soil)
 ```
 
 </details>
 
 
 
+##### Biomass (Chloroform fumigation method)
+<details>
+  <summary>click to open</summary>
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_biomass)
+```
+
+</details>
 
 
-## Session Info 
+
+##### Enzymes activity (MUF and MC fluorimetic microplate assays)
+
+<details>
+  <summary>click to open</summary>
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_enzymes)
+```
+
+</details>
+##### Fluorescein Diacetate Hydrolysis (FDA)
+
+<details>
+  <summary>click to open</summary>
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_FDA)
+```
+
+</details>
+#####  Permanganate-oxidizable carbon (POXC)
+
+<details>
+  <summary>click to open</summary>
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_POXC)
+```
+
+</details>
+
+
+#####  Carbon use efficency (CUE)
+
+<details>
+  <summary>click to open</summary>
+
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_CUE)
+```
+
+</details>
+
+#####  Mineral associated organic matter (MAOM)
+
+<details>
+  <summary>click to open</summary>
+
+```{r , fig.height=12, fig.width=12, results='hide', out.width="100%"}
+tar_read(gg_MAOM_prop)
+tar_read(gg_MAOM2)
+```
+
+</details>
+
+
+#####  Metagenome analysis
+
+<details>
+  <summary>click to open</summary>
+  
+##### Overall heatmap
+
+<details>
+  <summary>click to open</summary>
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_gene)$heat
+```
+</details>
+
+##### Volcano plots show small differences in Site (Organic vs Conventional), and when looking at individual aggregates the 0.053-0.25 mm shows large differences compared with all other aggregate sizes. 
+
+<details>
+  <summary>click to open</summary>
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_gene)$Plot1_v
+```
+</details>
+
+##### Two types of analysis showing what genes are significantly important to the comparison. Site is comparing the conventional and organicly managed plots.Note all aggregates are being compared to the Bulk soil (pre fractionated). 
+
+<details>
+  <summary>click to open</summary>
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_gene)$Plot2
+```
+
+</details>
+
+##### Dendrogram with heat map--- too small to read
+
+<details>
+  <summary>click to open</summary>
+  
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_gene)$heat2
+```
+
+</details>
+
+</details>
+
+
+#####  Metab analysis
+
+<details>
+  <summary>click to open</summary>
+  
+##### Overall heatmap
+
+<details>
+  <summary>click to open</summary>
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_metab)$heat
+```
+</details>
+
+##### Volcano plots show small differences in Site (Organic vs Conventional), and when looking at individual aggregates the 0.053-0.25 mm shows large differences compared with all other aggregate sizes. 
+
+<details>
+  <summary>click to open</summary>
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_metab)$Plot1_v
+```
+</details>
+
+##### Two types of analysis showing what genes are significantly important to the comparison. Site is comparing the conventional and organicly managed plots.Note all aggregates are being compared to the Bulk soil (pre fractionated). 
+
+<details>
+  <summary>click to open</summary>
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_metab)$Plot2
+```
+
+</details>
+
+##### Dendrogram with heat map--- too small to read
+
+<details>
+  <summary>click to open</summary>
+  
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(gg_metab)$heat2
+```
+
+</details>
+
+</details>
+
+</details>
+
+</details>
+
+
+# Year 2 (2025)
+
+<details>
+  <summary>click to open</summary>
+
+## Soil description
+
+<details>
+  <summary>click to open</summary>
+  
+##### 
+
+##### The soils were sieved through an 8 mm mesh and stored at -80°C until aggregate fractionation. Each sample underwent two rounds of fractionation. In the first round, soils were sieved, and the resulting aggregates were dried to assess physical properties. Dried aggregates were archived for potential future use. The second round involved sieving without drying, processing only two samples at a time to maintain soil moisture. Soil moisture was adjusted to approximately 68% water holding capacity, determined for each aggregate class from the first sieve.
+
+##### Following this, subsamples were processed as follows: some soils were stored in 1.7 mL tubes at -80°C for extra DNA extractions and metabolomics, 2 g of soil was incubated with ^18O-labeled H₂O to assess carbon use efficiency (CUE), and two 5 g subsamples were used to determine microbial biomass carbon (C) and nitrogen (N) via chloroform fumigation. After the CUE incubation, gas samples were taken from the headspace to measure respiration rates. DNA was then extracted from the soils to analyze ^18O incorporation into DNA during the 24-hour incubation. About 1 microgram of DNA was sent for metagenome analysis, bulk aggregates were sent for soil property assesment, and freeze dried soils were sent in for metabolomic analysis. FDA (cuvets) and POXC (microplate) were also measured using colormetric assays. Enzyme activities were measured via MUF and MC fluorometric microplate assays. OM fractions were also seperated into fPOM/oPOM/MAOM and will be sent for 13C and 15N analysis.
+
+</details>
+
+</details>
+
+
+
+# Session Info 
 
 <details>
   <summary> Session Info </summary>

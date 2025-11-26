@@ -1,0 +1,67 @@
+---
+title: "CUE_Davis_Soil_report"
+output: 
+  github_document:
+  html_preview: True
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE,
+                      message = FALSE,
+                      warning = FALSE
+                      )
+```
+
+
+<details>
+  <summary>click to open</summary>
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(soil_plots)
+
+```
+</details>
+
+
+
+##TC_TN
+<details>
+  <summary>click to open</summary>
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(soil_plots)$fPOM_TC_plot
+tar_read(soil_plots)$oPOM_TC_plot
+tar_read(soil_plots)$MAOM_TC_plot 
+tar_read(soil_plots)$fPOM_TN_plot
+tar_read(soil_plots)$oPOM_TN_plot
+tar_read(soil_plots)$MAOM_TN_plot
+tar_read(soil_plots)$TN.1_plot
+tar_read(soil_plots)$TC_plot
+```
+</details>
+
+##13C and 15N %
+<details>
+  <summary>click to open</summary>
+```{r , fig.height=8, fig.width=8, results='hide', out.width="100%"}
+tar_read(soil_plots)$fPOM_13C._plot
+tar_read(soil_plots)$oPOM_13C._plot
+tar_read(soil_plots)$MAOM_13C._plot 
+tar_read(soil_plots)$fPOM_15N._plot
+tar_read(soil_plots)$oPOM_15N._plot
+tar_read(soil_plots)$MAOM_15N._plot
+tar_read(soil_plots)$N._plot
+tar_read(soil_plots)$C._plot
+```
+</details>
+
+# Session Info 
+
+<details>
+  <summary> Session Info </summary>
+
+Date run: `r Sys.Date()`
+
+```{r}
+sessionInfo()
+```
+
+</details>
