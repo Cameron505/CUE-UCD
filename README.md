@@ -32,3 +32,25 @@ The analysis was performed using **R**. To reproduce the pipeline, run the follo
 source("run.R")
 # Or alternatively
 targets::tar_make()
+
+Key R Packages
+The following libraries were utilized within the Code/packages.R script:
+
+Data Science: tidyverse, plyr, dplyr, reshape2, janitor, pracma
+
+Ecology & Stats: vegan, nlme, agricolae, rstatix, ropls
+
+Bioinformatics: pmartR, edgeR, pathview, clusterProfiler, enrichplot
+
+Visualization: ggbiplot, ggpubr, cowplot, trelliscopejs, knitr
+
+Data Access
+Summary Data: All processed summary data are available within the /Data folder of this repository.
+
+Raw Sequence Data: Raw metagenomic sequencing data will be uploaded to the NCBI BioProject database.
+
+Contact
+Cameron McMillan University of California, Davis
+
+cmcmillan@ucdavis.edu
+
