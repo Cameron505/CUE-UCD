@@ -9,7 +9,7 @@ The study utilized trenched plots designed to minimize the impact of roots and p
 All experimental procedures were conducted in the past tense to reflect the completed nature of the data collection:
 
 * **Sample Preparation:** Soils were sieved through an 8 mm mesh and stored at -80°C until fractionation. 
-* **Fractionation:** Two rounds of fractionation were performed. In the first, aggregates were dried to assess physical properties. In the second, soils were processed moist (adjusted to ~68% water holding capacity) to maintain microbial integrity.
+* **Fractionation:** Two rounds of fractionation were performed. In the first, aggregates were sieved in large batches and dried to assess physical properties. In the second, soils were processed moist (adjusted to ~68% water holding capacity) to maintain microbial integrity.
 * **Microbial Analysis:** 2 g of soil was incubated with $^{18}\text{O}$-labeled $\text{H}_2\text{O}$ to assess carbon use efficiency (CUE). Microbial biomass C and N were determined via chloroform fumigation.
 * **Assays:** Enzyme activities were measured via MUF and MC fluorometric microplate assays. FDA (cuvettes) and POXC (microplates) were measured using colorimetric assays.
 * **Omics & Fractionation:** DNA was extracted for metagenome analysis and $^{18}\text{O}$ incorporation. Freeze-dried soils were sent for metabolomic analysis. Soil organic matter was separated into fPOM, oPOM, and MAOM fractions for future $^{13}\text{C}$ analysis.
